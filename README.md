@@ -25,4 +25,11 @@ Example of switch different shell scripts at startup of docker.
 	docker run --entrypoint=/bin/bash perftest /usr/src/scripts/docker/start_phantomas https://www.google.com --verbose
 ```
 
+
+
+git cheatsheet
+
+call git add/commit/push in one command
+
+  see http://stackoverflow.com/questions/19595067/git-add-commit-and-push-commands-in-one
  
