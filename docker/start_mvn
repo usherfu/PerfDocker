@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+#!/bin/bash
+
+echo 
+echo " starting maven command..."
+echo
+
+mvn  "$@"

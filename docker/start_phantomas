@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+#!/bin/bash
+
+echo 
+echo " starting phantomas command..."
+echo
+
+phantomas  "$@"
