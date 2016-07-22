@@ -2,7 +2,7 @@
 
 To build docker image
 ```
-   docker build perftest .
+   docker build -t perftest .
 ```
 
 
