@@ -1,5 +1,11 @@
 FROM maven:3-jdk-8
 
+#################
+#     Install nodejs 
+#         see reference https://github.com/nodejs/docker-node v4.4
+#
+################
+
 # gpg keys listed at https://github.com/nodejs/node
 RUN set -ex \
   && for key in \
@@ -26,10 +32,17 @@ RUN curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-
   && rm "node-v$NODE_VERSION-linux-x64.tar.xz" SHASUMS256.txt.asc SHASUMS256.txt
 
 
-#Install webpagetest-api wrapper
+#################
+#     Install webpagetest-api wrapper
+#################
+
 RUN npm install -g webpagetest
 
-#Install phantomas
+
+#################
+#     Install phantomas
+#################
+
 RUN npm install -g phantomas
 
 WORKDIR /usr/src/testautomation
