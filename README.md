@@ -39,4 +39,7 @@ http://calendar.perfplanet.com/2013/measure-web-performance-with-jenkins/
 call git add/commit/push in one command
 
   see http://stackoverflow.com/questions/19595067/git-add-commit-and-push-commands-in-one
- 
+
+##docker cheatsheet
+Access web server running inside docker container from host
+  see http://stackoverflow.com/questions/32045816/how-to-access-web-page-served-by-nginx-web-server-running-in-docker-container 
