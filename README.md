@@ -10,8 +10,10 @@ Example of switch different shell scripts at startup of docker.
 
 -Start script "/usr/src/scripts/docker/start_mvn"
 ```
-	docker run --entrypoint=/bin/bash perftest /usr/src/scripts/docker/start_mvn
+	docker run --entrypoint=/bin/bash perftest /usr/src/scripts/docker/start_mvn --version
 ```
+
+Additionally you can also git clone a project on the fly and compile it. See start_mvn for details.
 
 
 -Start script "/usr/src/scripts/docker/start_wpt"
