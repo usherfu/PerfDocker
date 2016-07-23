@@ -31,6 +31,9 @@ Additionally you can also git clone a project on the fly and compile it. See sta
    - [phantomas on github, including metrics] (https://github.com/macbre/phantomas)
  
 
+#### Using sitespeed.io
+http://calendar.perfplanet.com/2013/measure-web-performance-with-jenkins/
+
 ##git cheatsheet
 
 call git add/commit/push in one command
