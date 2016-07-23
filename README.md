@@ -28,7 +28,7 @@ Additionally you can also git clone a project on the fly and compile it. See sta
 ```
 #####Reference
    - [How to integrate phantomas with Jenkins] (http://fairl.es/2014/02/02/phantomas-performance-testing-and-jenkins/)
-   - [phantomas on github] (https://github.com/macbre/phantomas)
+   - [phantomas on github, including metrics] (https://github.com/macbre/phantomas)
  
 
 ##git cheatsheet
