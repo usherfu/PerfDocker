@@ -2,7 +2,8 @@
 #!/bin/bash
 
 echo 
-echo " starting phantomas command..."
+echo " starting phantomas command with following parameters ..."
+echo "   $@"
 echo
 
 phantomas  "$@"

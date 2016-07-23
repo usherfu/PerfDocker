@@ -5,7 +5,8 @@
 #cd performance
 
 echo 
-echo " starting maven command..."
+echo " starting maven command with following parameters ..."
+echo "   $@"
 echo
 
 mvn  "$@"

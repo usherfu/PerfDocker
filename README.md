@@ -26,7 +26,7 @@ Additionally you can also git clone a project on the fly and compile it. See sta
 ```
 	docker run --entrypoint=/bin/bash perftest /usr/src/scripts/docker/start_phantomas https://www.google.com --verbose
 ```
-
+ How to integrate phantomas with Jenkins: http://fairl.es/2014/02/02/phantomas-performance-testing-and-jenkins/
 
 
 git cheatsheet

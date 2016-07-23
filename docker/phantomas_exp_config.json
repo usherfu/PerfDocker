@@ -1,0 +1,10 @@
+{
+    "asserts": {
+        "bodySize": 1024,
+        "requests": 20,
+        "cssCount": 1,
+        "jsCount": 1,
+        "timeToLastByte": 1000
+    }
+}
+

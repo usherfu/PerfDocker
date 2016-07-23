@@ -2,7 +2,8 @@
 #!/bin/bash
 
 echo 
-echo " starting webpagetest command..."
-echo
+echo " starting webpagetest command with following parameters ..."
+echo "   $@"
+echo 
 
 webpagetest "$@"
