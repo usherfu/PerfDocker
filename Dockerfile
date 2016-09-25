@@ -48,7 +48,8 @@ RUN npm install -g webpagetest
 #################
 
 RUN npm install -g phantomas \
-  && npm install -g browser-perf
+  && npm install -g browser-perf \
+  && npm install -g cli-table
 
 WORKDIR /usr/src/testautomation
 ADD . /usr/src/scripts
