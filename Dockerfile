@@ -1,5 +1,8 @@
 FROM maven:3-jdk-8
 
+RUN apt-get update -y \
+  && apt-get install -y vim 
+
 #################
 #     Install nodejs 
 #         see reference https://github.com/nodejs/docker-node v4.4
@@ -23,6 +26,7 @@ RUN set -ex \
 
 ENV NPM_CONFIG_LOGLEVEL info
 ENV NODE_VERSION 4.4.7
+ENV NODE_PATH /usr/local/lib/node_modules/
 
 RUN curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-x64.tar.xz" \
   && curl -SLO "https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc" \
@@ -43,7 +47,8 @@ RUN npm install -g webpagetest
 #     Install phantomas
 #################
 
-RUN npm install -g phantomas
+RUN npm install -g phantomas \
+  && npm install -g browser-perf
 
 WORKDIR /usr/src/testautomation
 ADD . /usr/src/scripts
