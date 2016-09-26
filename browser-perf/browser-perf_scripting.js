@@ -9,7 +9,8 @@ browserPerf('https://www.google.com', function(err, res) {
 	console.log(generateTable(res));
     }
 }, {
-    selenium: "http://192.168.0.18:4444/wd/hub",
+    //selenium: "http://192.168.0.18:4444/wd/hub",
+    selenium: "http://10.87.30.246:4444/wd/hub",
     browsers: [{
         "browserName": "chrome",
 	"debug": true,
